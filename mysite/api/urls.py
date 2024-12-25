@@ -12,4 +12,9 @@ urlpatterns = [
 		views.BlogPostRetrieveUpdateDestroy.as_view(), 
 		name="blogposts-view-retrieve-update-delete"
 	),
+	path(
+		"blogposts/list/",
+		views.BlogPostList.as_view(),
+		name="blogposts-list"
+	),
 ]
